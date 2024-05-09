@@ -10,3 +10,9 @@ mark1\\rpl&frc<10&foc<1&sn~@&info=/^\s*$/&txt=/^(undefined|\s*|(\s*(@\w+|https?:
 mark1\\rpl&foc<1&frc<1
 mark1\\rpl&foc<30&cd<1y&@=/^\w$/
 frc<50&foc<10&(info*=各种证件|txt=/身份.*学位.*电工/&txt*=证)
+2000\\blue&@*=币安
+2000\\@=/币安.*fan/i
+2000\\@*=海角
+2000\\@=/^[59]1/
+0\\@*=发票&@*=代开
+mark2000\\@*=每日
