@@ -1,5 +1,3 @@
-<img alt="logo" src="assets/logo.svg" width="128">
-
 ### 表达式手册
 - [简体中文](https://free-spirit-dev.github.io/public/doc/el-cn.html)  
 - [繁體中文](https://free-spirit-dev.github.io/public/doc/el-tw.html)  
