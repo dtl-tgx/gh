@@ -1,0 +1,74 @@
+txt*=郭文贵&txt*=先生|info*=郭文贵&info*=先生
+0\\foc<=50&txt=/^\s*$/
+0\\foc<0&cd>=1y&frc<=10&!(lang*=zh)
+(foc<10&cd<1y)&txt*=日給30&txt*=円
+(foc<20&cd<2y)&@*=手机口大赛
+(lang=/en|und/)&foc<5&frc<50&info=/^\s*$/&txt=/(Nice|Ok|yes|Good|Niubility)[\.!]*\s*$/i
+mark1\\rpl&(frc<2&foc<2&cd<1m&(info=/^\s*$/|(sn=~@|(sn~@&sn=/\d+$/))))
+100\\rpl&(frc<1&foc<1&cd<1m&info=/^\s*$/&(sn=~@|(sn~@&sn=/\d+$/)))
+mark1\\rpl&frc<10&foc<1&sn~@&info=/^\s*$/&txt=/^(undefined|\s*|(\s*(@\w+|https?:\/\/t\.co\/\w+)\s*)*)$/&ptc=1
+mark1\\rpl&foc<1&frc<1
+mark1\\rpl&foc<30&cd<1y&@=/^\w$/
+frc<50&foc<10&(info*=各种证件|txt=/身份.*学位.*电工/&txt*=证)
+
+損失全額付款註冊專屬邀請碼
+(cd<2y|foc<10)&@*=六合彩&(@*=香港|@*=澳门)
+全亚洲最信誉的平台
+@=/[领送]/&@=/[美现]金/|url=/xn88\.(vip|com|org)/
+foc<50&@*=跑分-
+
+  ###名称广告
+2000\\blue&@*=币安
+2000\\@=/币安.*fan/i
+2000\\@*=海角
+2000\\@=/^[59]1/
+0\\@*=发票&@*=代开
+mark2000\\@*=每日
+
+  ###
+(cd<2y|foc<20|催情|抓龙筋|放心购买)&早泄&(增大|阳痿|增粗|性冷淡|延时)
+(foc<100&cd<2y)&foc<80&txt*=东和伟哥&txt*=惊喜
+2000\\foc<50&ctg*=药&(增大&增粗|性&保健|阳痿&早泄|(男|助脖)&房事)
+2000\\foc<100000&身体&(性用品|房事)
+
+  ###
+link*=t.me/dianziyan667|(@*=烟杆|@*=电子烟&foc<500)
+foc<200&(info*=免税|info*=口粮)
+(foc<20|cd<2y)&香烟&(一条起发|中华双中|高端粮草|鸿运口粮|13265006937)
+frc<80&foc<30&rpl&txt=/免税.*香烟|两条起飞|Rhao68900 /
+
+  ###金融灰产
+foc<5000&(专业&银行&贷款|@*=灰产|@*=赚钱&@*=兼职|@*=免费&撸钱|@*=金融&无视黑白)
+txt=/发.{0,4}票/&txt=/(代.{0,4}开|正.{0,4}规|验.{0,4}证.*付.{0,4}款)/
+frc<10&foc<5&/发[^]{0,4}票[^]*付[^]{0,4}款/
+foc<200&@*=发票&(代开|正规)
+2000\\frc<50&foc<10&txt*=贷&txt=/个人|企业/&txt*=费用
+
+  ###币圈骚扰
+(foc<50|cd<2y)&(url*=vvo888.com|url*=avascriptions.com|url*=xr2.me/qdfCJ|url*=LD77.CC)
+(cd<2y|foc<1000)&txt=/xpet/i
+(foc<100|Crypto|cd<2y)&$tip&@tipcoineth
+(foc<15&frc<100|lang*=en)&txt=/AINNLayer2|ANVM/i
+(foc<500&frc<1000|lang*=en)&txt=/Piin|Pinetwork/i
+foc<50&txt*=xmetacene&lang*=en
+foc<50&lang=/en|in/&txt=/OKZOO/i
+mark200\\foc<500&txt=/OKZOO/i
+foc<200&lang=/en|in/&txt=/@Web3Go|GoDIN/i
+mark200\\foc<500&txt=/@Web3Go|GoDIN/i
+foc<200&lang=/en|in/&txt=/wizz.*woods/i
+rpl&frc<150&foc<100&txt*=信号&txt=/交易.*单击|@(off_seungwoo|Aziz_smanel|simthle|analystop|tocrabika|catwaelk)/i
+
+  ###黑客与刷粉
+foc<10&粉丝&点赞
+foc<10&/专业.*查档.*找人/
+foc<2000&/((社工库|手机定位|盗号|盗qq|查户籍|查学籍|查聊天记录|查老赖|查定位)[^]*){3,}/
+foc<1500&/^.*(刷?推[特文]刷?(粉丝?|点赞|评论|阅|浏览).*){2,}.*/
+foc<2000&全&最&刷粉
+foc<1500&自动&推广
+foc<100&/(互推)?.*自助下单.*(互推)?/
+10\\foc<200&@*=黑客
+foc<100&破解&黑客
+foc<5&涨粉|涨赞
+(foc<10|blue&foc<3000)&url*=fans888.cc
+(foc<20&cd<2y)&(url*=mf8.xyz|url*=mh8.club)
+@=/查(手机号|婚姻|档|学籍|户籍|聊天记录|查老赖|定位)|开房记录|人肉|社工库|手机定位|盗(号|qq)/i
