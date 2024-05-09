@@ -37,3 +37,32 @@ txt=/发.{0,4}票/&txt=/(代.{0,4}开|正.{0,4}规|验.{0,4}证.*付.{0,4}款)/
 frc<10&foc<5&/发[^]{0,4}票[^]*付[^]{0,4}款/
 foc<200&@*=发票&(代开|正规)
 2000\\frc<50&foc<10&txt*=贷&txt=/个人|企业/&txt*=费用
+
+  ###币圈骚扰
+(foc<50|cd<2y)&(url*=vvo888.com|url*=avascriptions.com|url*=xr2.me/qdfCJ|url*=LD77.CC)
+(cd<2y|foc<1000)&txt=/xpet/i
+(foc<100|Crypto|cd<2y)&$tip&@tipcoineth
+(foc<15&frc<100|lang*=en)&txt=/AINNLayer2|ANVM/i
+(foc<500&frc<1000|lang*=en)&txt=/Piin|Pinetwork/i
+foc<50&txt*=xmetacene&lang*=en
+foc<50&lang=/en|in/&txt=/OKZOO/i
+mark200\\foc<500&txt=/OKZOO/i
+foc<200&lang=/en|in/&txt=/@Web3Go|GoDIN/i
+mark200\\foc<500&txt=/@Web3Go|GoDIN/i
+foc<200&lang=/en|in/&txt=/wizz.*woods/i
+rpl&frc<150&foc<100&txt*=信号&txt=/交易.*单击|@(off_seungwoo|Aziz_smanel|simthle|analystop|tocrabika|catwaelk)/i
+
+  ###黑客与刷粉
+foc<10&粉丝&点赞
+foc<10&/专业.*查档.*找人/
+foc<2000&/((社工库|手机定位|盗号|盗qq|查户籍|查学籍|查聊天记录|查老赖|查定位)[^]*){3,}/
+foc<1500&/^.*(刷?推[特文]刷?(粉丝?|点赞|评论|阅|浏览).*){2,}.*/
+foc<2000&全&最&刷粉
+foc<1500&自动&推广
+foc<100&/(互推)?.*自助下单.*(互推)?/
+10\\foc<200&@*=黑客
+foc<100&破解&黑客
+foc<5&涨粉|涨赞
+(foc<10|blue&foc<3000)&url*=fans888.cc
+(foc<20&cd<2y)&(url*=mf8.xyz|url*=mh8.club)
+@=/查(手机号|婚姻|档|学籍|户籍|聊天记录|查老赖|定位)|开房记录|人肉|社工库|手机定位|盗(号|qq)/i
